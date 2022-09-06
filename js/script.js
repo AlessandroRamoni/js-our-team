@@ -52,9 +52,9 @@ console.log(team[2].foto);
 ///////////////////CICLO FOR ////////////////
 
 for (let i = 0; i < team.length; i++) {
-  console.log(team[i].foto);
+  console.log(team[i].ruolo);
   list.innerHTML += `<li>
-                    ${team[i].nome} ${team[i].ruolo} ${team[i].foto} 
+                    ${team[i].nome} ${team[i].ruolo} <img class="pictures" src="${team[i].foto}"> 
     </li>`;
 }
 

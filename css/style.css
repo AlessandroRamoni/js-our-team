@@ -72,3 +72,7 @@ meter {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+.pictures{
+    max-width: 100px;
+}
