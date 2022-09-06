@@ -10,6 +10,7 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 
 const container = document.querySelector(".container");
+const title = document.getElementById("title");
 
 const team = [
   {
@@ -53,9 +54,16 @@ console.log(team[2].foto);
 
 for (let i = 0; i < team.length; i++) {
   console.log(team[i].ruolo);
+  title.innerHTML = "<h1>Meet our team!!!</h1>";
   container.innerHTML += `<div class="card">
                     <h3>${team[i].nome}, ${team[i].ruolo}</h3> <img class="pictures" src="${team[i].foto}"> 
     </div>`;
+}
+
+/////////////// CICLO FOR IN /////////////////
+
+for (let i in team[0]) {
+  console.log(i);
 }
 
 /*
