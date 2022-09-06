@@ -54,7 +54,7 @@ console.log(team[2].foto);
 
 for (let i = 0; i < team.length; i++) {
   console.log(team[i].ruolo);
-  title.innerHTML = "<h1>Meet our team!!!</h1>";
+  title.innerHTML = "<h1>Meet our team</h1>";
   container.innerHTML += `<div class="card">
                     <h3>${team[i].nome}, ${team[i].ruolo}</h3> <img class="pictures" src="${team[i].foto}"> 
     </div>`;
