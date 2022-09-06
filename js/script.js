@@ -9,7 +9,7 @@ Scott Estrada	Developer	scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 
-const list = document.getElementById("list");
+const container = document.querySelector(".container");
 
 const team = [
   {
@@ -53,9 +53,9 @@ console.log(team[2].foto);
 
 for (let i = 0; i < team.length; i++) {
   console.log(team[i].ruolo);
-  list.innerHTML += `<li>
-                    ${team[i].nome} ${team[i].ruolo} <img class="pictures" src="${team[i].foto}"> 
-    </li>`;
+  container.innerHTML += `<div class="card">
+                    <h3>${team[i].nome}, ${team[i].ruolo}</h3> <img class="pictures" src="${team[i].foto}"> 
+    </div>`;
 }
 
 /*

@@ -73,6 +73,30 @@ meter {
     -webkit-user-drag: element;
 }
 
+
 .pictures{
     max-width: 100px;
+}
+
+.card{
+    margin: 0 auto;
+    max-width: 500px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:nth-of-type(odd){
+    background-color: rgb(229, 145, 145);
+}
+
+.card:nth-of-type(even){
+    background-color: rgb(212, 224, 255);
+}
+
+h3{
+    color: rgb(36, 94, 28);
+    font-size: 1.7em;
+    line-height: 4em;
+    padding-left: 20px;
 }
