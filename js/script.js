@@ -12,36 +12,36 @@ Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 const list = document.getElementById("list");
 
 const team = [
-  (player1 = {
+  {
     nome: "Wayne",
     ruolo: "Founder & CEO",
     foto: "./img/wayne-barnett-founder-ceo.jpg",
-  }),
-  (player2 = {
+  },
+  {
     nome: "Angela",
     ruolo: "Chief Editor",
     foto: "./img/angela-caroll-chief-editor.jpg",
-  }),
-  (player3 = {
+  },
+  {
     nome: "Walter",
     ruolo: "Office Manager",
     foto: "./img/walter-gordon-office-manager.jpg",
-  }),
-  (player4 = {
+  },
+  {
     nome: "Angela",
     ruolo: "Social Media Manager",
     foto: "./img/angela-lopez-social-media-manager.jpg",
-  }),
-  (player5 = {
+  },
+  {
     nome: "Scott",
     ruolo: "Developer",
     foto: "./img/scott-estrada-developer.jpg",
-  }),
-  (player6 = {
-    nome: "Barbare",
+  },
+  {
+    nome: "Barbara",
     ruolo: "Graphic Designer",
     foto: "./img/barbara-ramos-graphic-designer.jpg",
-  }),
+  },
 ];
 
 console.log(team);
@@ -49,6 +49,16 @@ console.log(team[0].nome);
 console.log(team[4].ruolo);
 console.log(team[2].foto);
 
+///////////////////CICLO FOR ////////////////
+
+for (let i = 0; i < team.length; i++) {
+  console.log(team[i].foto);
+  list.innerHTML += `<li>
+                    ${team[i].nome} ${team[i].ruolo} ${team[i].foto} 
+    </li>`;
+}
+
+/*
 list.innerHTML += `<li>
                 ${team[0].nome}
                 ${team[0].ruolo}
@@ -79,3 +89,4 @@ list.innerHTML += `<li>
                 ${team[5].ruolo}
                 ${team[5].foto}
 </li>`;
+*/
