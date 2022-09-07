@@ -80,6 +80,7 @@ meter {
 
 .pictures{
     max-width: 150px;
+    border-radius: 0 10px 10px 0;
 }
 
 .card{
@@ -88,6 +89,7 @@ meter {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .card:nth-of-type(odd){
